@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arko Sports - Contact</title>
+  <link rel="icon" href="assets/images/logo.svg">
+  <link rel="stylesheet" href="assets/css/common.css">
+  <link rel="stylesheet" href="assets/css/contact.css">
+
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <a class="navbar__logo" href="index.html">
+        <img src="assets/images/logo.svg" alt="business brand logo" class="navbar__logo--image">
+        <p class="navbar__logo--text">Arko Sports</p>
+      </a>
+      <ul class="navbar__menu hidden">
+        <li><a href="index.html" class="navbar__menu--1">Home</a></li>
+        <li><a href="product.html" class="navbar__menu--2">Products</a></li>
+        <li><a href="pricing.html" class="navbar__menu--3">Pricing</a></li>
+      </ul>
+
+      <span class="navbar__icons">
+        <img id="x" class="hamburger-open-icon" src="assets/images/hamburger.svg" alt="hamburger menu open icon">
+        <img class="hamburger-close-icon hide" src="assets/images/close.svg" alt="hamburger menu close icon">
+      </span>
+    </nav>
+  </header>
+
+  <main>
+    <form>
+      <fieldset>
+        <legend>Contact Form</legend>
+        <label for="name">Visitor Name:</label><br>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Visitor Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Visitor Message:</label><br>
+        <textarea id="message" name="message" required></textarea>
+        <br><br>
+        <input type="submit" value="Submit">
+      </fieldset>
+    </form>
+    
+  </main>
+
+
+  <aside class="aside">
+    <h1>Related Products</h1>
+    <span class="related-products">
+      <a href="https://www.inholland.nl" target="_blank">
+        <figure>
+          <img title="related product 1" class="product-img" src="assets/images/products/product-1.jpg" alt="product 1" />
+          <footer><small>Copyright &copy 2023</small></footer>
+          <figcaption>Pic from pexels.com</figcaption>
+          <span class="pricing-info">
+            <h4>Product 1</h4>
+            <p>$ 45</p>
+          </span>
+        </figure>
+      </a>
+      <a href="https://www.inholland.nl" target="_blank">
+        <figure>
+          <img title="related product 2" class="product-img" src="assets/images/products/product-2.jpg" alt="product 2" />
+          <footer><small>Copyright &copy 2023</small></footer>
+          <figcaption>Pic from pexels.com</figcaption>
+          <span class="pricing-info">
+            <h4>Product 2</h4>
+            <p>$ 75</p>
+          </span>
+        </figure>
+      </a>
+      <a href="https://www.inholland.nl" target="_blank">
+        <figure>
+          <img title="related product 3" class="product-img" src="assets/images/products/product-3.jpg" alt="product 3" />
+          <footer><small>Copyright &copy 2023</small></footer>
+          <figcaption>Pic from pexels.com</figcaption>
+          <span class="pricing-info">
+            <h4>Product 3</h4>
+            <p>$ 85</p>
+          </span>
+        </figure>
+      </a>
+    </span>
+  </aside>
+
+  <footer class="page-footer">
+    <p>Copyright &copy 2023 and all rights reserved by Arko Sports</p>
+    <p>Created by Muhtasim Arko</p>
+  </footer>
+
+  <div class="cookie-stat">
+    This website uses cookies to ensure you get the best experience on our website.
+    <button onclick="acceptCookies()">Accept</button>
+  </div>
+</body>
+<script src="assets/main.js"></script>
+</html>

@@ -1,0 +1,67 @@
+body {
+  margin: 0 20px;
+}
+
+header {
+  height: 90px;
+}
+
+.product-img {
+  width: 100%;
+}
+
+.related-products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.aside {
+  margin: 20px 0;
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+figure footer, figcaption{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+.pricing-info{
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+
+/* Color the first column yellow */
+table td:first-child {
+  color: #FF0;
+}
+
+/* Color the even horizontal lines */
+tr:nth-child(even) {
+  background-color: blue;
+}
+
+tr:nth-child(odd) {
+  background-color: red;
+}
+
+@media (max-width: 768px) {
+  .related-products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 650px) {
+  .related-products {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
